@@ -1,1 +1,3 @@
-# jpg_to_png
+# JPG_to_PNG
+A fun little project
+Learn from Zerotomastery
