@@ -1,6 +1,6 @@
-# Use your Terminal, if you are on 
+# Use your Terminal, if you are on
 # windows type: python JPG_to_PNG.py JPG/ PNG/
-# It will create a new folder 
+# It will create a new folder
 # and put your PNGs in this folder.
 
 # ---------------------------------------------------------------
@@ -13,13 +13,14 @@
 # img.save("img.png", format="PNG")
 
 # ---------------------------------------------------------------
-# import sys
-# import os
-# from PIL import Image
+import sys
+import os
+from PIL import Image
+# https://www.udemy.com/course/complete-python-developer-zero-to-mastery/learn/lecture/16136599#overview
 
-
-# path = sys.argv[4]
-# directory = sys.argv[4]
+path = sys.argv[0]
+print(path)
+# directory = sys.argv[1]
 
 # if not os.path.exists(directory):
 #     os.makedirs(directory)
@@ -52,3 +53,11 @@
 # ---------------------------------------------------------------
 # https://www.quora.com/How-do-you-fix-Sys-argv-1-indexerror-list-index-out-of-range-Python-3-9
 
+# This code will not cause the error and will handle it gracefully
+
+# import sys
+
+# try:
+#     print(sys.argv[1])
+# except IndexError:
+#     print("No command-line argument provided")
